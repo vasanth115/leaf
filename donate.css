@@ -1,0 +1,587 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Merriweather&family=Mukta&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+header
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header .leaf-image img
+{
+    height: 4rem;
+    width: 4.5rem;
+    margin-left: 3rem;
+    animation: changeby 2s infinite;
+    color: #ea4c89;
+}
+@keyframes changeby
+{
+    0%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(10px);
+    }
+}
+
+.navbar ul
+{
+    display: flex;
+    margin-right: 2rem;
+}
+.navbar ul li
+{
+    padding-left: 1.3rem;
+    list-style-type: none;
+}
+header .navbar ul li a
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:rgb(158, 77, 77);
+}
+header .navbar ul li a:hover
+{
+    color: rgb(0, 4, 255);
+}
+.buttons
+{
+    margin-right: 1.5rem;
+}
+.contribute
+{
+    padding: 8px 17px;
+    background-color: rgb(231, 179, 83);
+    border: none;
+    color: #fff;
+}
+.sign-in
+{
+    padding: 8px 12px;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    border: none;
+}
+.donar
+{
+  height: 80vh;
+  display: flex;
+  flex-direction:column ;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+}
+.donar h2,p
+{
+  align-items: center;
+  margin-top: 50px;
+  /* margin-bottom: 50px; */
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+  justify-content: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.donar h2
+{
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 4.2rem;
+  margin-top: -140px;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 3.rem;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+.donar .btn
+{
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  background: blue;
+  padding: 10px 20px;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+.donar .btn:hover{
+  transform: translateY(-10px);
+}
+
+.overlay
+{
+  background-image: url("donate_image.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+}
+.overlay .cont
+{
+  height: 80vh;
+  background: #26e4a5ab;
+}
+.content
+{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.content .text
+{
+  height: auto;
+  width: 50vw;
+}
+.content .text h2
+{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  width: 50vw;
+  margin-right: -3rem;
+  color: gray;
+}
+.content .text p
+{
+  font-family: "Roboto",sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  justify-content: center;
+  text-align: justify;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 3rem;
+  line-height: 2rem;
+  color: rgb(155, 153, 153);
+}
+.content .chart
+{
+  width: 50vw;
+  margin-left: 7rem;
+  display: flex;
+  flex-direction: row;
+  margin-right: 2rem;
+  column-gap: 4rem;
+}
+.content .chart ul li{
+  list-style: none;
+  line-height: 3.0rem;
+  font-size: 20px;
+}
+.content .chart ul .head
+{
+  line-height: 5rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.5rem;
+  color: gray;
+}
+.content .chart .country
+{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: rgba(116,116,194);
+}
+.content .chart .dollers
+{
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #4382d7;
+}
+.contact
+{
+    margin-top: 3rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.follow
+{
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(231, 231, 247);
+}
+.follow:hover
+{
+  transform: translateY(15px);
+  transition: 1.5s;
+  cursor: no-drop;
+}
+.follow h1
+{
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+.follow p
+{
+    text-align: justify;
+    font-size: 1.3rem;
+    color: dimgrey;
+    margin-top: 2rem;
+}
+.follow .social
+{
+    width: 45%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-right: 2rem;
+}
+.follow .social i
+{
+    font-size: 1.6rem;
+    margin-left: 1.3rem;
+}
+.social[title]:hover::before {
+  content: attr(title);
+  position: absolute;
+ background-color: #000;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.2s, visibility 0.2s;
+  visibility: hidden;
+}
+
+.social[title]:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+.bxl-facebook-circle
+{
+    color: #3b5998 ;
+}
+.bxl-instagram-alt
+{
+    color: rgb(247, 0, 255);
+}
+.bxl-twitter
+{
+    color:  #00acee;
+}
+.bxl-linkedin-square
+{
+    color: #0072b1;
+}
+.bxl-dribbble
+{
+    color: #ea4c89;
+}
+.bxl-github
+{
+    color: #000;
+}
+.donate
+{
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    background-color: rgb(231, 231, 247);
+}
+.donate:hover
+{
+  transform: translateY(20px);
+  transition: 1.5s;
+  cursor: no-drop;
+}
+.donate h1
+{
+    color: #000;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+.donate p
+{
+    text-align: justify;
+    font-size: 1.3rem;
+    color: dimgrey;
+    margin-top: 2rem;
+}
+.donate button
+{
+    padding: 10px 30px;
+    text-align: center;
+    background-color: #3b5998;
+    color:#fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-top: 15px;
+}
+.donate button:hover
+{
+    transform: translateY(-10px);
+}
+.leaf
+{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.leaf img
+{
+    height: 250px;
+    width: 250px;
+    animation: change 2s infinite;
+}
+.leaf p
+{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(62, 192, 112);
+}
+@keyframes change
+{
+  0%
+  {
+    transform: translateY(10px);
+  }
+  50%{
+    transform: translateY(0);
+  }
+  100%
+  {
+    transform: translateY(10px);
+  }
+}
+.donate_popup
+{
+  display: none;
+  height: auto;
+  width: 40%;
+  position: fixed;
+  top: 50%;
+  padding: 20px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgb(243, 239, 239);
+  box-shadow: 2px 2px 4px #000;
+  border-radius: 10px;
+}
+.donate_popup h1{
+  text-align: right;
+  margin-top: 0px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.donate_content h1
+{
+  text-align: center;
+}
+.donate_content p
+{
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(179, 174, 174);
+  margin-top: 10px;
+}
+.form
+{
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+.form input
+{
+  padding: 10px 50px;
+  background-color: #fff;
+  border: 2px solid #000;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+.form input::placeholder
+{
+  color: #000;
+}
+.donate_content h3
+{
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 1.1rem;
+  color: rgb(163, 161, 161);
+}
+.donation
+{
+  display: flex;
+  justify-content: center;
+}
+select
+{
+  padding: 10px 60px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: 2px solid #000;
+}
+select option
+{
+  margin-top: 15px;
+  font-size: 1rem;
+}
+.ratio
+{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ratio .ratio_item input
+{
+  padding: 5px;
+}
+.ratio .ratio_item span
+{
+  font-size: 1rem;
+  color: #ea4c89;
+}
+.button
+{
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+.button button
+{
+  padding: 15px 0px;
+  width: 80%;
+  background-color: green;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.fotter
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 100%;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+    background-color: rgb(226, 222, 222);
+    border-top: 5px solid rgb(150, 148, 148);
+}
+.fotter p
+{
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    margin:20px 0px 10px 0px;
+}
+.footer-nav ul
+{
+    display: flex;
+    margin-bottom: 0;
+}
+.footer-nav ul li
+{
+    list-style-type: none;
+    padding-right: 20px;
+}
+button
+{
+    cursor: grab;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: rgb(8, 148, 8);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(8, 148, 8, 0.63);
+}

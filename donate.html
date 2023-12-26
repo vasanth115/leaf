@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf</title>
+    <link rel="stylesheet" href="donate.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="overlay">
+  <div class="cont">
+    <header>
+      <div class="leaf-image">
+          <img src="leaf.png" alt="">
+      </div>
+      <div class="navbar">
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="our_mission.html">Our Mission</a></li>
+             <li><a href="contact.html">Support</a></li>
+          </ul>
+      </div>
+      <div class="buttons">
+        <a href="login.html"><button class="sign-in"> <i class="fas fa-sign-in-alt"></i> Sign In</button></a>
+    </div>
+      
+   </header>
+  
+     <div class="donar">
+      <div class="image-overlay">
+        <h2 class="animate-charcter">Donors & MDBS</h2>
+        <p>Since the Leaf was established in 2017, 14 donor countries have contributed over $2 billion in support of scaling up mitigation and adaptation action in developing and middle-income countries.</p>
+        <button class="btn" id="donatebtn"><i class="fas fa-donate"></i> Donate</button>
+      </div>
+     </div>
+  </div>
+ </div>
+   <div class="content">
+    <div class="text">
+      <h2>Top Country Contributions</h2>
+      <p>Since the LEAF was established in 2008, 14 donor countries have contributed over $8 billion in support of scaling up mitigation and adaptation action in developing and middle-income countries. These precious public resources are held in trust by the World Bank, and they are disbursed as grants, highly concessional loans, and risk mitigation instruments to recipient countries through multilateral development banks (MDBs).</p>
+     </div>
+     <div class="chart">
+      <ul class="country">
+       <li class="head">Country</li>
+        <li>Australia</li>
+        <li>United Kingdom</li>
+        <li>France</li>
+        <li>Germany</li>
+        <li>Canada</li>
+        <li>Japan</li>
+        <li>United States</li>
+      </ul>
+      <ul class="dollers">
+        <li class="head">Contribution</li>
+         <li>$283.26m</li>
+         <li>$2,830.80m</li>
+         <li>$136.17m</li>
+         <li>$680.67m</li>
+         <li>$277.03m</li>
+         <li>$1,234.14m</li>
+         <li>$2,000.04m</li>
+       </ul>
+     </div>
+   </div>
+   <div class="contact">
+    <div class="follow">
+        <h1>Follow</h1>
+        <p>Our non-governmental organizationon (LEAF) is active socially – choose your network:</p>
+        <div class="social">
+            <a href=""><i class='bx bxl-facebook-circle' title="Facebook"></i></a>
+            <a href=""><i class='bx bxl-instagram-alt' title="Instagram"></i></a>
+            <a href=""><i class='bx bxl-twitter' title="Twitter"></i></a>
+            <a href=""><i class='bx bxl-linkedin-square' title="Linkedin"></i></a>
+            <a href=""><i class='bx bxl-dribbble' title="Dribbble"></i></a>
+            <a href=""><i class='bx bxl-github' title="Github"></i></a>
+        </div>
+    </div>
+    <div class="donate">
+        <h1>Want to Support Us ?</h1>
+        <p>We are hard working people and we need every little bit of help that we can get to change our Environment</p>
+        <a href="#"><button ><i class="fas fa-donate"></i> Donate</button></a>
+    </div>
+ </div>
+ <div class="leaf">
+    <img src="leaf.png" alt="">
+    <p>Leaf - Non Profit environmental Organization</p>
+ </div>
+ </div>
+
+ <!-- popup -->
+ <div class="donate_popup" id="donate_popup">
+  <h1 onclick="cancel()">x</h1>
+  <div class="donate_content">
+    <h1>Make a Donation</h1>
+    <p>Your donation will support nonprofits that prove community-led solutions are key to solving this challenge.</p>
+    <div class="form">
+      <input type="text" placeholder="Name" required>
+      <input type="Email" placeholder="E-Mail" required>
+    </div>
+    <h3>I want to donate for :</h3>
+    <div class="donation">
+      <select name="Custom_select" id="">
+        <option value="Eduaction">Education</option>
+        <option value="">Climate Change</option>
+        <option value="">Child Campus</option>
+        <option value="">Clean Water</option>
+      </select>
+    </div>
+    <h3>How Much Want to donate ?</h3>
+    <div class="ratio">
+      <div class="ratio_item">
+        <input type="radio">
+        <span>$50</span>
+      </div>
+      <div class="ratio_item">
+        <input type="radio">
+        <span>$100</span>
+      </div>
+      <div class="ratio_item">
+        <input type="radio">
+        <span>$150</span>
+      </div>
+      <div class="ratio_item">
+        <input type="radio">
+        <span>$200</span>
+      </div>
+    </div>
+  </div>
+  <div class="button">
+    <button onclick="cancel()">Donate Now</button>
+  </div>
+ </div>
+
+ <div class="fotter">
+  <div class="footer-nav">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="donate.html">Our Mission</a></li>
+          <li><a href="contact.html">Support</a></li>
+       </ul>
+  </div>
+  <p>&copy; 2023 Leaf. All rights reserved.</p>
+</div>
+ <script>
+let donate_popup=document.getElementById("donate_popup");
+let btn=document.getElementById("donatebtn")
+btn.addEventListener("click",popup);
+  function popup()
+  {
+     donate_popup.style.display="block";
+  }
+  function cancel()
+  {
+    donate_popup.style.display="none";
+  }
+ </script>
+</body>
+</html>
